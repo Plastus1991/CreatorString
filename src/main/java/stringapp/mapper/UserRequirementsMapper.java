@@ -1,9 +1,11 @@
 package stringapp.mapper;
 
 
+import org.springframework.stereotype.Service;
 import stringapp.domain.UserRequirements;
 import stringapp.dto.UserRequirementsDto;
 
+@Service
 public class UserRequirementsMapper {
 
     public UserRequirements mapToRequirements(final UserRequirementsDto userRequirementsDto) {

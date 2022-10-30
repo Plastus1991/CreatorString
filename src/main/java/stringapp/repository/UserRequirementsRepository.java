@@ -7,4 +7,7 @@ import stringapp.domain.UserRequirements;
 
 @Repository
 public interface UserRequirementsRepository extends JpaRepository<UserRequirements, Long> {
+
+    @Override
+    UserRequirements getById(Long id);
 }
